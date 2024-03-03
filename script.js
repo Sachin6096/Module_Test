@@ -37,6 +37,9 @@
         if (emailInput.classList.contains('done') && passwordInput.classList.contains('done')) {
             if (confirm('Do you want to sign up?')) {
                 alert('Successful signup!');
+                window.location.href = window.location.href;
+                emailInput.value = '';
+                passwordInput.value = '';
             } else {
                 
                 window.location.href = window.location.href;
